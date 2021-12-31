@@ -1,56 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <!-- We will be creating many elements in this document with some class (to add some styling later) -->
-    <!-- home page -->
-    <div id="home" class="homePage">
-        <div class="intro">                                  <!-- creating a master div to have child elements in it -->
-            <div class="name">Hi, I am &#60;name&#62;</div>  <!-- creating a div to enter your name (edit your name here) -->
-            <p>Frontend developer</p>                        <!-- paragraph tag -->
-            <button class="your_button">button</button>      <!-- creating a button -->
+<html lang=en>
+    <head>
+        <link rel=icon type=image/png href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkiIHbQSBF95Vqbi_jMG4lC5eg_rVzeiOnn0q9Y2O_JGGXXJjbtH7cmHqPV_8wt1oUH48&usqp=CAU">
+        <title>Hamdaan Ali</title>
+        <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">       
+        <link href="Bootstrap v4.6.0.css" rel=stylesheet>
+    </head>
+    <body>
+        <div id=top></div>
+        <div id=hero class="" style=height:100vh!important>
+            <div class=container>
+                <h1 class=hero-title class=load-hidden>Hey, I'm <span class=text-color-main>Hamdaan Ali.</span>
+                    <br>And I'm a <span class=text-color-green> burgeoning Software Developer</span>.
+                </h1>
+                <p class=hero-cta class=load-hidden>
+                   <a class="cta-btn cta-btn--hero" href=#about>Know more</a>
+                </p>
+            </div>
         </div>
-        <div class="myImage">                                <!-- always a good habbit to add master divs -->
-            <img src="https://miro.medium.com/max/3960/0*HICLyAdNSIyT0ODU.jpg" alt="MyImage">  <!-- adding a image using url -->
-        </div>
-    </div>
-
-    <!-- about me -->
-    <div id="aboutme" class="about">                         <!-- again a master div -->
-        <div class="about_heading">                          <!-- child div for heading -->
-            About me
-        </div>
-        <!-- adding a paragraph tag to write "about me", edit it and write about you -->
-        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates provident molestias a
-            animi facilis iusto voluptatum repellat eligendi consequatur distinctio placeat mollitia veritatis
-            recusandae, ad, quasi commodi enim quos! Quasi aspernatur veniam, blanditiis sint necessitatibus dicta
-            libero voluptatibus reiciendis asperiores nemo maiores ducimus corrupti magnam error voluptatum ab velit.
-        </p>
-    </div>
-
-    <!-- contact -->
-    <div id="contact" class="contact_sec">                  <!-- adding a master div again -->
-        <div class="contact_heading">
-            Contact Me                                      <!-- adding a chiid div for heading -->
-        </div>
-        <div class="contact_info">
-            <!-- adding more divs for personal details, edit them! -->
-            <div class="Email">Email : <span class='data'>gdsc@example.com</span></div>
-            <div class="mobile_no">Mobile no : <span class='data'>+91 XXXXXXXXXX</span></div>
-            <!-- adding anchor tag to directly redirect user to your profile, add links to your profile in href -->
-            <div class="linkdin">linkdin :<span class='data'> <a
-                        href="https://www.linkedin.com/company/gdsc-iiit-kalyani/">Linkdin IN</a></span></div>  
-            <div class="github">Github : <span class='data'> <a href="https://github.com/GDSC-IIIT-Kalyani">Github</a></span></div>
-            <div class="others">Others :<span class='data'> <a href="https://gdsc.bio.link/">BIO</a></span></div>
-        </div>
-</body>
-
+        <section id=about>
+            <div class=container>
+                <h2 class=section-title>About me</h2>
+                <div class="row about-wrapper">
+                    <div class="col-md-6 col-sm-12">
+                        <div class=about-wrapper__image>
+                            <img alt=something class="img-fluid rounded shadow-lg" height=auto width=300px src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkiIHbQSBF95Vqbi_jMG4lC5eg_rVzeiOnn0q9Y2O_JGGXXJjbtH7cmHqPV_8wt1oUH48&usqp=CAU" alt="Profile Image">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class=about-wrapper__info>
+                            <p class=about-wrapper__info-text>I am a fresher at Indian Institute of Information Technology Kalyani, India pursuing Bachelor of Technology in Computer Science and Engineering.</p>
+                            <p class=about-wrapper__info-text>I've always been into programming, thanks to the marvalleous support I got form my peers and teachers. I've been learning HTML CSS (W3 and Bootstrap) JavaScript AngularJS C++ Java and I am very much interested in IoT projects.</p>
+                            <p class=about-wrapper__info-text>I am a Calligrapher, a Typograper, a Figure Skater, a Violinist and a promising Digital Graphic Artist </p>
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer navbar-static-bottom">
+            <div class=container>
+                <a href=#top class=back-to-top>
+                    <i class="fa fa-angle-up fa-2x" aria-hidden=true></i>
+                </a>
+                <div class=social-links>
+                    <a href="https://twitter.com/violinblackeye?t=hAXJlP5rxA_G5JJ8BG9IUg&s=09" target=_blank>
+                        <i class="fa fa-twitter fa-inverse"></i>
+                    </a>
+                    <a href="" target=_blank>
+                        <i class="fa fa-linkedin fa-inverse"></i>
+                    </a>
+                    <a href="https://github.com/HamdaanAliQuatil" target=_blank>
+                        <i class="fa fa-github fa-inverse"></i>
+                    </a>
+                    
+                    
+                </div>
+                <hr>
+                <p class=footer__text>© 2021 - Hamdaan Ali</p>
+            </div>
+        </footer>
+ 
+    </body>
 </html>
