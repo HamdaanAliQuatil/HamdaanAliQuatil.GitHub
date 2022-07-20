@@ -9751,13 +9751,13 @@ a:hover {
 }
 
 .text-color-main {
-    color: #effd5f;
+    color: orange;
     -webkit-text-fill-color: #8e0000
 }
 
 @supports(-webkit-background-clip: text) or (background-clip:text) {
     .text-color-main {
-        background-image:linear-gradient(135deg,#effd5f,#effd5f);
+        background-image:linear-gradient(135deg,orange,orange);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         color: transparent
@@ -9802,16 +9802,16 @@ a:hover {
 }
 
 .cta-btn--hero {
-    color: #effd5f;
-    -webkit-text-fill-color: #effd5f;
+    color: orange;
+    -webkit-text-fill-color: orange;
     border: 2px solid transparent;
-    border-image: linear-gradient(135deg,#effd5f,#effd5f);
+    border-image: linear-gradient(135deg,orange,orange);
     border-image-slice: 1
 }
 
 @supports(-webkit-background-clip: text) or (background-clip:text) {
     .cta-btn--hero {
-        background-image:linear-gradient(135deg,#effd5f,#effd5f);
+        background-image:linear-gradient(135deg,orange,orange);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         color: transparent
@@ -9820,24 +9820,24 @@ a:hover {
 
 @media screen and (-ms-high-contrast:active),screen and (-ms-high-contrast:none) {
     .cta-btn--hero {
-        color: #effd5f!important
+        color: orange!important
     }
 
     .cta-btn--hero:hover {
-        color: #effd5f!important
+        color: orange!important
     }
 }
 
 @media(max-width: 37.5em) {
     .cta-btn--hero {
         background-image:none;
-        border: 2px solid #effd5f;
-        -webkit-text-fill-color: #effd5f
+        border: 2px solid orange;
+        -webkit-text-fill-color: orange
     }
 }
 
 .cta-btn--hero:after {
-    background-image: linear-gradient(135deg,#effd5f,#effd5f)
+    background-image: linear-gradient(135deg,orange,orange)
 }
 
 @media(max-width: 37.5em) {
@@ -9967,7 +9967,7 @@ section {
 
 #about {
     background-color: #6d20e9;
-    background-image: linear-gradient(135deg,#effd5f,#000);
+    background-image: linear-gradient(135deg,orange,#000);
     color: #fff;
     height: 100%;
     border-top: 0;
